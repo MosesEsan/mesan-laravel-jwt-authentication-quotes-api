@@ -2,7 +2,7 @@
 
 This API was built for the Quotes app at the repo below.
 
-<a href="https://github.com/MosesEsan/mesan-react-native-redux-quotes-app" target="_blank">React Native/Redux Quotes App </a>.
+<a href="https://github.com/MosesEsan/mesan-react-native-redux-quotes-app" target="_blank">React Native/Redux Quotes App </a>
 
 ### Tutorial
 
@@ -102,11 +102,7 @@ Since we are going to allow users to create their accounts within the applicatio
 
 We need to add an extra column to the users table. 
 
-Create new table “user_verifications” that will store token of user verification code. When a user is signed up, a verification code is generated and stored in the table, an email is then sent to the user asking them to verify their account by following a link to /user/verify/{verification_code}.
-
-
 Available on my <a href="" target="_blank">blog</a>.
-
 
 <a name="step5"></a>
 ### Step 5: Register

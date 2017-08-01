@@ -84,7 +84,6 @@ class AuthController extends Controller
         JWTAuth::invalidate($request->input('token'));
     }
 
-
     /**
      * API Recover Password
      *
