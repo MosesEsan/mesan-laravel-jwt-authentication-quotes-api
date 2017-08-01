@@ -1,9 +1,10 @@
-# Laravel 5.4 JWT Authentication with E-Mail Verification
-A PHP Mobile Authentication API which includes E-mail verification, developed with Laravel 5.4 framework and JWT (JSON Web Tokens) Package.
+# Laravel 5.4 JWT-Powered Mobile App API
+
+This API was built for the Quotes app at the repo below.
+
+<a href="https://github.com/MosesEsan/mesan-react-native-redux-quotes-app" target="_blank">React Native/Redux Quotes App </a>.
 
 ### Tutorial
-
-The steps below are a compilation of a series of tutorials.
 
 <ul>
   <li><a href="#step1">Step 1: Create new project and install jwt-auth</a></li>
@@ -12,7 +13,8 @@ The steps below are a compilation of a series of tutorials.
   <li><a href="#step4">Step 4:  Set Up Database</a></li>
   <li><a href="#step5">Step 5: Register and Verify Email Address</a></li>
   <li><a href="#step6">Step 6: Log User In and Out</a></li>
-  <li><a href="#step7">Step 7: Testing</a></li>
+  <li><a href="#step7">Step 7: Recover Password</a></li>
+  <li><a href="#step8">Step 8: Testing</a></li>
 </ul>
 
 <a name="step1"></a>
@@ -84,22 +86,13 @@ Register the jwt.auth and jwt.refresh middleware in app/http/Kernel.php
 Open up routes/api.php.
 
 ```php
-Route::post('login', 'AuthController@login'); 
-Route::post('register', 'AuthController@register'); 
- 
-Route::group(['middleware' => ['jwt.auth']], function() { 
-    Route::post('logout', 'AuthController@logout'); 
-  
-    Route::get('test', function(){ 
-        return response()->json(['foo'=>'bar']); 
-    }); 
-});
-```
-Open up routes/web.php and add the route for verifying.
+Route::post('register', 'AuthController@register');
+Route::post('login', 'AuthController@login');
+Route::post('recover', 'AuthController@recover');
 
-```php
-....
-Route::get('user/verify/{verification_code}', 'AuthController@verifyUser');
+Route::group(['middleware' => ['jwt.auth']], function() {
+    Route::get('logout', 'AuthController@logout');
+});
 ```
 
 <a name="step4"></a>
@@ -107,27 +100,30 @@ Route::get('user/verify/{verification_code}', 'AuthController@verifyUser');
 
 Since we are going to allow users to create their accounts within the application, we will need a table to store all of our users. Thankfully, Laravel already ships with a migration to create a basic users table, so we do not need to manually generate one. The default migration for the users table is located in the database/migrations directory.
 
-We need to create a new table and add an extra column to the users table. Firstly, we need a boolean field ‘is_verified’to keep track of whether a user has verified their email address, this will be set to false by default.
+We need to add an extra column to the users table. 
 
 Create new table “user_verifications” that will store token of user verification code. When a user is signed up, a verification code is generated and stored in the table, an email is then sent to the user asking them to verify their account by following a link to /user/verify/{verification_code}.
 
-When a user follows this link, we take the passed in verification code and search for it within the user_verifications table. If a matching verified code is found we set the is_verified field for this user to true.
 
-Available on my <a href="http://mosesesan.com/blog/2017/06/19/laravel-jwt-authentication-with-e-mail-verification/#step4" target="_blank">blog</a>.
-
+Available on my <a href="" target="_blank">blog</a>.
 
 
 <a name="step5"></a>
-### Step 5: Register and Verify Email Address
+### Step 5: Register
 
-Available on my <a href="http://mosesesan.com/blog/2017/06/19/laravel-jwt-authentication-with-e-mail-verification/#step5" target="_blank">blog</a>.
+Available on my <a href="5" target="_blank">blog</a>.
 
 <a name="step6"></a>
 ### Step 6: Log User In and Out
 
-Available on my <a href="http://mosesesan.com/blog/2017/06/19/laravel-jwt-authentication-with-e-mail-verification/#step6" target="_blank">blog</a>.
+Available on my <a href="6" target="_blank">blog</a>.
 
 <a name="step7"></a>
-### Step 7: Testing
+### Step 7: Recover Password
 
-Available on my  <a href="http://mosesesan.com/blog/2017/06/19/laravel-jwt-authentication-with-e-mail-verification/#step7" target="_blank">blog</a>.
+Available on my <a href="" target="_blank">blog</a>.
+
+<a name="step8"></a>
+### Step 8: Testing
+
+Available on my  <a href="" target="_blank">blog</a>.
