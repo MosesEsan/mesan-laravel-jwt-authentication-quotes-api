@@ -102,24 +102,24 @@ Since we are going to allow users to create their accounts within the applicatio
 
 We need to add an extra column to the users table. 
 
-Available on my <a href="" target="_blank">blog</a>.
+Available on my <a href="https://medium.com/@mosesesan/tutorial-4-how-to-build-a-laravel-5-4-jwt-powered-mobile-app-api-4c59109d35f" target="_blank">blog</a>.
 
 <a name="step5"></a>
 ### Step 5: Register
 
-Available on my <a href="5" target="_blank">blog</a>.
+Available on my <a href="https://medium.com/@mosesesan/tutorial-4-how-to-build-a-laravel-5-4-jwt-powered-mobile-app-api-4c59109d35f" target="_blank">blog</a>.
 
 <a name="step6"></a>
 ### Step 6: Log User In and Out
 
-Available on my <a href="6" target="_blank">blog</a>.
+Available on my <a href="https://medium.com/@mosesesan/tutorial-4-how-to-build-a-laravel-5-4-jwt-powered-mobile-app-api-4c59109d35f" target="_blank">blog</a>.
 
 <a name="step7"></a>
 ### Step 7: Recover Password
 
-Available on my <a href="" target="_blank">blog</a>.
+Available on my <a href="https://medium.com/@mosesesan/tutorial-4-how-to-build-a-laravel-5-4-jwt-powered-mobile-app-api-4c59109d35f" target="_blank">blog</a>.
 
 <a name="step8"></a>
 ### Step 8: Testing
 
-Available on my  <a href="" target="_blank">blog</a>.
+Available on my  <a href="https://medium.com/@mosesesan/tutorial-4-how-to-build-a-laravel-5-4-jwt-powered-mobile-app-api-4c59109d35f" target="_blank">blog</a>.
